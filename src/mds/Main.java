@@ -92,6 +92,24 @@ public class Main {
 		ng.AddToNG(nFour.GetID());
 
 		ng.ListIDNumbers();
+	
+		
+		System.out.println("Node Queue");
+		NodeQueue nq = new NodeQueue();
+		nq.AddToQueue(nTwo);
+		nq.AddToQueue(nThree);
+		nq.AddToQueue(nFour);
+		
+		nq.ReadFromQueue();
+		nq.RemoveFromQueue();
+		nq.ReadFromQueue();
+		
+		Node nodeFromRead = nq.ReturnNodeFromRead();
+		System.out.println(nodeFromRead.GetID());
+		
+		
+		
+		
 		
 		
 	}
