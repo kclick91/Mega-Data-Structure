@@ -108,6 +108,53 @@ public class Main {
 		System.out.println(nodeFromRead.GetID());
 		
 		
+		//Practice with Learning about Plumbing
+		//This area is used for learning by doing
+
+		//REMOVED BEFORE PUSHING
+		
+		Node startNodePlumbing = new Node("Plumbing Basics/Fundamentals", 1);
+		Graph plumbingStart = new Graph(startNodePlumbing, "Starter Graph");
+		
+		List<Node> nodesListPlumbing = new ArrayList<>();
+		
+		Node topicOne = new Node("Understanding what plumbing covers", 2);
+		Node topicTwo = new Node("Learn the basics first", 3);
+		Node topicThree = new Node("Practice hands-on", 4);
+		Node topicFour = new Node("Take a beginner course", 5);
+		Node topicFive = new Node("Learn the code", 6);
+		Node topicSix = new Node("Join Forums or Communities", 7);
+		Node topicSeven = new Node("Explore Certification(If going pro)", 8);
+		nodesListPlumbing.add(topicOne);
+		nodesListPlumbing.add(topicTwo);
+		nodesListPlumbing.add(topicThree);
+		nodesListPlumbing.add(topicFour);
+		nodesListPlumbing.add(topicFive);
+		nodesListPlumbing.add(topicSix);
+		
+		startNodePlumbing.StartGraph(nodesListPlumbing, plumbingStart);
+		
+		startNodePlumbing.PrintNeighbors();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
