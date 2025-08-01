@@ -7,15 +7,18 @@ public class Node {
 	public List<Node> nodesNextDoor;
 	private String message;
 	private Graph graph;
-	public Node(String m)
+	private int ID;
+	public Node(String m, int id)
 	{
 		message = m;
+		ID = id;
 	}
 
-	public Node(List<Node> nodes, String m)
+	public Node(List<Node> nodes, String m, int id)
 	{
 		nodesNextDoor = nodes;
 		message = m;
+		ID = id;
 	}
 	
 	public List<Node> StartGraph(List<Node> nodes, Graph g)
@@ -53,5 +56,9 @@ public class Node {
 		{
 			nodesNextDoor.get(i).PrintMessage();
 		}
+	}
+	public int GetID()
+	{
+		return ID;
 	}
 }

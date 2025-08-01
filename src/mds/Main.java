@@ -14,9 +14,9 @@ public class Main {
 		
 		
 		
-		Node n = new Node("Start Node");
+		Node n = new Node("Start Node", 1);
 		
-		Node nTwo = new Node("Neighbor of Start Node");
+		Node nTwo = new Node("Neighbor of Start Node", 2);
 		list.add(nTwo);
 		
 		
@@ -28,10 +28,10 @@ public class Main {
 	
 		Node start = graph.GetStartNode().GetNodesNextDoor().get(0);
 		
-		Node nThree = new Node("Start Node for Graph Two");
-		Node nFour = new Node("Graph Two");
-		Node nFive = new Node("Graph Two");
-		Node nSix = new Node("Graph Two");
+		Node nThree = new Node("Start Node for Graph Two", 3);
+		Node nFour = new Node("Graph Two", 4);
+		Node nFive = new Node("Graph Two", 5);
+		Node nSix = new Node("Graph Two", 6);
 		List<Node> listTwo = new ArrayList<>();
 		listTwo.add(nFour);
 		listTwo.add(nFive);
@@ -43,8 +43,8 @@ public class Main {
 		Node startGraphTwo = graphTwo.GetStartNode().GetNodesNextDoor().get(0);
 		Node startGraphTwoTwo = graphTwo.GetStartNode().GetNodesNextDoor().get(1);
 		Node startGraphTwoThree = graphTwo.GetStartNode().GetNodesNextDoor().get(2);
-		Node nodeSeven = new Node("Secondary Graph Node");
-		Node nodeEight = new Node("Secondary Graph Node");
+		Node nodeSeven = new Node("Secondary Graph Node", 7);
+		Node nodeEight = new Node("Secondary Graph Node", 8);
 		
 		List<Node> listThree = new ArrayList<>();
 		listThree.add(nodeSeven);
@@ -85,6 +85,13 @@ public class Main {
 		ns.ReadNodeFromStack();
 		ns.RemoveNodeFromStack();
 		ns.ReadNodeFromStack();
+		
+		NodeGroup ng = new NodeGroup("ID of Nodes used in Stack.");
+		ng.AddToNG(nTwo.GetID());
+		ng.AddToNG(nThree.GetID());
+		ng.AddToNG(nFour.GetID());
+
+		ng.ListIDNumbers();
 		
 		
 	}
