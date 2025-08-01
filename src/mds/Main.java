@@ -66,6 +66,26 @@ public class Main {
 		System.out.println("Start Node should be a neighbor: ");
 		or.PrintNeighbors();
 		
+		//BREAK
+		System.out.println("===================");
+		System.out.println("Message of start node of loop part: ");
+		or.PrintMessage();
+		System.out.println("Message of first neighbor: ");
+		or.GetNodesNextDoor().get(0).PrintMessage();
+		System.out.println("Message of first neighbor of the first neighbor: ");
+		or.GetNodesNextDoor().get(0).GetNodesNextDoor().get(0).PrintMessage();
+		
+		//Stack Examples
+		NodeStack ns = new NodeStack();
+		
+		ns.AddNodeToStack(nTwo);
+		ns.AddNodeToStack(nThree);
+		ns.AddNodeToStack(nFour);
+		
+		ns.ReadNodeFromStack();
+		ns.RemoveNodeFromStack();
+		ns.ReadNodeFromStack();
+		
 		
 	}
 
