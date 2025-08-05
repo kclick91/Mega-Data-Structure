@@ -1,5 +1,6 @@
 package mds;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Node {
@@ -10,6 +11,7 @@ public class Node {
 	private int ID;
 	public Node(String m, int id)
 	{
+		nodesNextDoor = new ArrayList<Node>();
 		message = m;
 		ID = id;
 	}

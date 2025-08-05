@@ -30,4 +30,12 @@ public class NodeGroup {
 		}
 	}
 	
+	public String GetName()
+	{
+		return name;
+	}
+	public int GetCount()
+	{
+		return IDList.size();
+	}
 }
